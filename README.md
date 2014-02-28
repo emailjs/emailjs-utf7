@@ -23,10 +23,10 @@ By default, `.encode()` only encodes the default characeters defined in RFC 2152
 ### IMAP (RFC 3501)
 
 ```javascript
-var encoded = utf7.encode('"你好" heißt "Hallo"');
+var encoded = utf7.imap.encode('"你好" heißt "Hallo"');
 '"&T2BZfQ-" hei&AN8-t "Hallo"' === encoded;
 
-var decoded = utf7.decode(encoded);
+var decoded = utf7.imap.decode(encoded);
 '"你好" heißt "Hallo"' === decoded;
 ```
 
