@@ -1,0 +1,24 @@
+{
+  "name": "utf7",
+  "main": "utf7.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/Kreata/mimefuncs",
+  "authors": [
+    "Konstantin Käfer <kkaefer@gmail.com>",
+    "Andris Reinman <andris@kreata.ee>"
+  ],
+  "description": "Converts text to and from UTF-7 (RFC 2152 and IMAP)",
+  "keywords": [
+    "IMAP",
+    "RFC2152",
+    "UTF7"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

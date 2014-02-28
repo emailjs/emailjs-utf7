@@ -4,28 +4,33 @@ Encodes and decodes JavaScript (Unicode/UCS-2) strings to UTF-7 ASCII strings. I
 
 ## Usage
 
-**RFC 2152**
+Require [utf7.js](utf7.js) either as a AMD module or like a regular `<script>`. This exposes object `utf7`.
+
+### RFC 2152
 
 ```javascript
-var utf7 = require('utf7');
-
 var encoded = utf7.encode('Jyväskylä');
-assert.equal('Jyv+AOQ-skyl+AOQ-', encoded);
+'Jyv+AOQ-skyl+AOQ-' === encoded; // true
 
 var decoded = utf7.decode(encoded);
-assert.equal('Jyväskylä', decoded);
+'Jyväskylä' === decoded; // true
 ```
 
 By default, `.encode()` only encodes the default characeters defined in RFC 2152. To also encode optional characters, use `.encodeAll()` or specify the characters you want to encode as the second argument to `.encode()`.
 
-**IMAP (RFC 3501)**
+### IMAP (RFC 3501)
 
 ```javascript
-var utf7 = require('utf7').imap;
-
 var encoded = utf7.encode('"你好" heißt "Hallo"');
-assert.equal('"&T2BZfQ-" hei&AN8-t "Hallo"', encoded);
+'"&T2BZfQ-" hei&AN8-t "Hallo"' === encoded;
 
 var decoded = utf7.decode(encoded);
-assert.equal('"你好" heißt "Hallo"', decoded);
+'"你好" heißt "Hallo"' === decoded;
 ```
+
+
+## License
+
+[Original code](https://github.com/kkaefer/utf7) licensed under BSD by Konstantin Käfer
+
+AMD compatible fork licensed under BSD by Andris Reinman
