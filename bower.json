@@ -1,8 +1,8 @@
 {
   "name": "utf7",
-  "main": "utf7.js",
+  "main": "src/utf7.js",
   "version": "2.0.0",
-  "homepage": "https://github.com/Kreata/mimefuncs",
+  "homepage": "https://github.com/whiteout-io/utf7",
   "authors": [
     "Konstantin Käfer <kkaefer@gmail.com>",
     "Andris Reinman <andris@kreata.ee>"
@@ -15,10 +15,15 @@
   ],
   "license": "BSD",
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.js",
+    "LICENSE",
+    "package.json",
+    "README.md"
   ]
 }

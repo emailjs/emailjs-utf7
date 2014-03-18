@@ -1,0 +1,29 @@
+{
+  "name": "utf7",
+  "main": "src/utf7.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/whiteout-io/utf7",
+  "author": "Konstantin Käfer",
+  "description": "Converts text to and from UTF-7 (RFC 2152 and IMAP)",
+  "keywords": ["IMAP", "RFC2152", "UTF7"],
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/whiteout-io/utf7.git"
+  },
+  "license": "BSD",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "grunt": "~0.4.1",
+    "grunt-mocha-phantomjs": "~0.4.0",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-mocha-test": "~0.8.1",
+    "mocha": "~1.16.2",
+    "phantomjs": "~1.9.7-1",
+    "requirejs": "~2.1.10"
+  }
+}
