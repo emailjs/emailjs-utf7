@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git://github.com/whiteout-io/utf7.git"
   },
-  "license": "BSD",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "chai": "~1.8.1",
