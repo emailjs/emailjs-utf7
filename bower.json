@@ -13,7 +13,7 @@
     "RFC2152",
     "UTF7"
   ],
-  "license": "BSD",
+  "license": "MIT",
   "ignore": [
     "node_modules",
     "bower_components",
