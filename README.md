@@ -4,15 +4,15 @@ UMD module that encodes and decodes JavaScript (Unicode/UCS-2) strings to UTF-7 
 
 ### [volo](http://volojs.org/):
 
-    volo add whiteout-io/utf7/2.0.0
+    volo add whiteout-io/utf7/v2.0.0
 
 ### [Bower](http://bower.io/):
 
-    bower install git@github.com:whiteout-io/utf7.git#2.0.0
+    bower install git@github.com:whiteout-io/utf7.git#v2.0.0
 
 ### [npm](https://www.npmjs.org/):
 
-    npm install https://github.com/whiteout-io/utf7/tarball/2.0.0
+    npm install https://github.com/whiteout-io/utf7/tarball/v2.0.0
 
 ## Usage
 
@@ -44,8 +44,9 @@ By default, `.encode()` only encodes the default characeters defined in RFC 2152
 
 ## License
 
-[Original code](https://github.com/kkaefer/utf7) licensed under BSD by Konstantin Käfer
+[Original code](https://github.com/kkaefer/utf7) licensed under MIT by Konstantin Käfer
 
+```
 Copyright (c) 2010-2011 Konstantin Käfer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -65,5 +66,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+```
 
-UMD fork licensed under BSD by Andris Reinman
+UMD fork licensed under MIT by Andris Reinman
