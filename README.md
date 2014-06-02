@@ -2,17 +2,13 @@
 
 UMD module that encodes and decodes JavaScript (Unicode/UCS-2) strings to UTF-7 ASCII strings. It supports two modes: UTF-7 as defined in [RFC 2152](http://tools.ietf.org/html/rfc2152) and Modified UTF-7 as defined by the IMAP standard in [RFC 3501, section 5.1.3](http://tools.ietf.org/html/rfc3501#section-5.1.3)
 
-### [volo](http://volojs.org/):
-
-    volo add whiteout-io/utf7/v2.0.0
-
 ### [Bower](http://bower.io/):
 
-    bower install git@github.com:whiteout-io/utf7.git#v2.0.0
+    bower install git@github.com:whiteout-io/utf7.git#<TAG NAME>
 
 ### [npm](https://www.npmjs.org/):
 
-    npm install https://github.com/whiteout-io/utf7/tarball/v2.0.0
+    npm install https://github.com/whiteout-io/utf7/tarball/<TAG NAME>
 
 ## Usage
 
