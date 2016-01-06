@@ -1,8 +1,8 @@
 {
-  "name": "utf7",
+  "name": "emailjs-utf7",
   "main": "src/utf7.js",
-  "version": "2.0.1",
-  "homepage": "https://github.com/whiteout-io/utf7",
+  "version": "2.0.3",
+  "homepage": "https://github.com/emailjs/emailjs-utf7",
   "authors": [
     "Konstantin Käfer <kkaefer@gmail.com>",
     "Andris Reinman <andris@kreata.ee>"
