@@ -2,9 +2,9 @@
     "use strict";
 
     if (typeof define === "function" && define.amd) {
-        define(['chai', 'utf7'], factory);
+        define(['chai', 'emailjs-utf7'], factory);
     } else if (typeof exports === 'object') {
-        factory(require('chai'), require('../src/utf7'));
+        factory(require('chai'), require('../src/emailjs-utf7'));
     }
 }(this, function(chai, utf7) {
     'use strict';
@@ -130,17 +130,17 @@
                     expect(utf7.decode('\'+T2BZfQ-\'+ACA-hei+AN8-t+ACAAIg-Hallo+ACI-')).to.equal('\'\u4F60\u597D\' heißt "Hallo"');
                     expect(utf7.decode('\'+T2BZfQ-\'+ACA-hei+AN8-t+ACAAIg-Hallo+ACI')).to.equal('\'\u4F60\u597D\' heißt "Hallo"');
                 });
-                
+
                 it('should decode +- to the plus sign', function() {
                     expect(utf7.decode('Hot +- Spicy +- Fruity')).to.equal('Hot + Spicy + Fruity');
                     expect(utf7.decode('Hot+ACAAKwAg-Spicy+ACAAKwAg-Fruity')).to.equal('Hot + Spicy + Fruity');
                 });
-                
+
                 it('should decode slashes in the beginning', function() {
                     expect(utf7.decode('+///typh2VDIf7Q-')).to.equal('\uffff\uedca\u9876\u5432\u1fed');
                     expect(utf7.decode('+///typh2VDIf7Q')).to.equal('\uffff\uedca\u9876\u5432\u1fed');
                 });
-                
+
                 it('should decode non-ASCII chars', function() {
                     expect(utf7.decode('+AOQ-+-+AOQ-+-+AOQ-')).to.equal('\u00E4+\u00E4+\u00E4');
                     expect(utf7.decode('+AOQ++AOQ+-+AOQ')).to.equal('\u00E4+\u00E4+\u00E4');

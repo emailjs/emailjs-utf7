@@ -1,7 +1,7 @@
 {
   "name": "emailjs-utf7",
-  "main": "src/utf7.js",
-  "version": "2.0.3",
+  "main": "src/emailjs-utf7.js",
+  "version": "3.0.0",
   "homepage": "https://github.com/emailjs/emailjs-utf7",
   "author": "Konstantin Käfer",
   "description": "Converts text to and from UTF-7 (RFC 2152 and IMAP)",
