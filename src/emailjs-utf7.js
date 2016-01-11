@@ -26,7 +26,7 @@
     } else if (typeof exports === 'object') {
         module.exports = factory();
     } else {
-        root.utf7 = factory();
+        root['emailjs-utf7'] = factory();
     }
 }(this, function() {
     'use strict';
