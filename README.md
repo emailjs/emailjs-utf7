@@ -18,11 +18,8 @@ import { encode, encodeAll, decode, imapEncode, imapDecode } from 'emailjs-utf7'
 ### RFC 2152
 
 ```javascript
-var encoded = encode('Jyväskylä');
-'Jyv+AOQ-skyl+AOQ-' === encoded; // true
-
-var decoded = decode(encoded);
-'Jyväskylä' === decoded; // true
+encode('Jyväskylä') // -> 'Jyv+AOQ-skyl+AOQ-'
+decode(encoded); // -> 'Jyväskylä'
 ```
 
 By default, `encode()` only encodes the default characeters defined in RFC 2152. To also encode optional characters, use `encodeAll()` or specify the characters you want to encode as the second argument to `.encode()`.
@@ -30,11 +27,8 @@ By default, `encode()` only encodes the default characeters defined in RFC 2152.
 ### IMAP (RFC 3501)
 
 ```javascript
-var encoded = imapEncode('"你好" heißt "Hallo"');
-'"&T2BZfQ-" hei&AN8-t "Hallo"' === encoded;
-
-var decoded = imapDecode(encoded);
-'"你好" heißt "Hallo"' === decoded;
+imapEncode('"你好" heißt "Hallo"') // -> '"&T2BZfQ-" hei&AN8-t "Hallo"'
+imapDecode(encoded) // -> '"你好" heißt "Hallo"'
 ```
 
 ## License
