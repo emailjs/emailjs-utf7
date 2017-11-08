@@ -1,29 +1,47 @@
 {
   "name": "emailjs-utf7",
   "main": "src/emailjs-utf7.js",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "homepage": "https://github.com/emailjs/emailjs-utf7",
   "author": "Konstantin Käfer",
   "description": "Converts text to and from UTF-7 (RFC 2152 and IMAP)",
-  "keywords": ["IMAP", "RFC2152", "UTF7"],
+  "keywords": [
+    "IMAP",
+    "RFC2152",
+    "UTF7"
+  ],
   "scripts": {
-    "test": "grunt"
+    "lint": "$(npm bin)/standard",
+    "test": "npm run lint && npm run unit",
+    "unit": "$(npm bin)/mocha './src/*-unit.js' --reporter spec --require babel-register testutils.js",
+    "test-watch": "$(npm bin)/mocha './src/*-unit.js' --reporter spec --require babel-register testutils.js --watch"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:emailjs/emailjs-utf7.git"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "base64-js": "^1.2.1"
+  },
   "devDependencies": {
-    "chai": "~4.1.1",
-    "grunt": "~1.0.1",
-    "grunt-mocha-phantomjs": "~4.0.0",
-    "grunt-contrib-connect": "~1.0.2",
-    "grunt-contrib-jshint": "~1.1.0",
-    "grunt-mocha-test": "~0.13.2",
-    "mocha": "~3.5.0",
-    "phantomjs": "~2.1.7",
-    "requirejs": "~2.3.4"
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "before",
+      "beforeAll",
+      "afterAll",
+      "after",
+      "expect"
+    ]
   }
 }
