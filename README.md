@@ -1,6 +1,6 @@
 # UTF-7
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/emailjs/emailjs-addressparser.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/emailjs/emailjs-utf7.png?branch=master)](https://travis-ci.org/emailjs/emailjs-utf7) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)  [![ES6+](https://camo.githubusercontent.com/567e52200713e0f0c05a5238d91e1d096292b338/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f65732d362b2d627269676874677265656e2e737667)](https://kangax.github.io/compat-table/es6/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/emailjs/emailjs-utf7.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/emailjs/emailjs-utf7.png?branch=master)](https://travis-ci.org/emailjs/emailjs-utf7) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)  [![ES6+](https://camo.githubusercontent.com/567e52200713e0f0c05a5238d91e1d096292b338/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f65732d362b2d627269676874677265656e2e737667)](https://kangax.github.io/compat-table/es6/)
 
 Encodes and decodes JavaScript (Unicode/UCS-2) strings to UTF-7 ASCII strings. It supports two modes: UTF-7 as defined in [RFC 2152](http://tools.ietf.org/html/rfc2152) and Modified UTF-7 as defined by the IMAP standard in [RFC 3501, section 5.1.3](http://tools.ietf.org/html/rfc3501#section-5.1.3)
 
