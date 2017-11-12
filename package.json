@@ -1,6 +1,6 @@
 {
   "name": "emailjs-utf7",
-  "main": "src/utf7.js",
+  "main": "dist/utf7.js",
   "version": "4.0.0",
   "homepage": "https://github.com/emailjs/emailjs-utf7",
   "author": "Konstantin Käfer",
@@ -45,6 +45,9 @@
       "afterAll",
       "after",
       "expect"
+    ],
+    "ignore": [
+      "dist"
     ]
   }
 }
