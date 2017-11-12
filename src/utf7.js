@@ -1,5 +1,4 @@
-import encodeBase64 from './base64-encode'
-import decodeBase64 from './base64-decode'
+import { encode as encodeBase64, decode as decodeBase64 } from 'emailjs-base64'
 
 function encodeToUTF7 (str) {
   const b = new Uint8Array(str.length * 2)
