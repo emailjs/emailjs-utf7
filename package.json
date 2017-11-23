@@ -1,7 +1,7 @@
 {
   "name": "emailjs-utf7",
   "main": "dist/utf7.js",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "homepage": "https://github.com/emailjs/emailjs-utf7",
   "author": "Konstantin Käfer",
   "description": "Converts text to and from UTF-7 (RFC 2152 and IMAP)",
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "emailjs-base64": "^1.0.3"
+    "emailjs-base64": "^1.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

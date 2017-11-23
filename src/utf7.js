@@ -1,4 +1,4 @@
-import { encode as encodeBase64, decode as decodeBase64 } from 'emailjs-base64'
+import { encode as encodeBase64, decode as decodeBase64, OUTPUT_TYPED_ARRAY } from 'emailjs-base64'
 
 function encodeToUTF7 (str) {
   const b = new Uint8Array(str.length * 2)
@@ -14,7 +14,7 @@ function encodeToUTF7 (str) {
 }
 
 function decodeFromUTF7 (str) {
-  const octets = decodeBase64(str)
+  const octets = decodeBase64(str, OUTPUT_TYPED_ARRAY)
   let output = ''
 
   // In modified UTF-7, all characters are represented by their two byte Unicode ID.
