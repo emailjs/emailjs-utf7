@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "emailjs-base64": "^1.1.2"
+    "emailjs-base64": "^1.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -32,7 +32,7 @@
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.1",
+    "nodemon": "^1.14.1",
     "pre-commit": "^1.2.2",
     "standard": "^10.0.3"
   },
